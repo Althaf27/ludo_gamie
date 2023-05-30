@@ -74,9 +74,21 @@
 /* ############################################################################ */
 
 .yellow-circle {
-  background-color: #f9cc3d;
+  background-color: #f5ebc9;
+
+  border: calc(100vmin / 200) solid #000000;
+  display: grid;
 }
 
+.yellow-1,
+.yellow-2,
+.yellow-3,
+.yellow-4 {
+  font-size: calc(100vmin / 35);
+  color: #f9cc3d;
+  justify-self: center;
+  align-self: center;
+}
 .one-y {
   grid-column: 12/13;
   grid-row: -14/-13;
@@ -126,7 +138,19 @@
 /* ############################################################################ */
 
 .red-circle {
-  background-color: #f80000;
+  background-color: #ebbcbc;
+  border: calc(100vmin / 200) solid #000000;
+  display: grid;
+}
+
+.red-1,
+.red-2,
+.red-3,
+.red-4 {
+  font-size: calc(100vmin / 35);
+  color: #f80000;
+  justify-self: center;
+  align-self: center;
 }
 
 .one-r {
@@ -151,7 +175,7 @@
 
 /*............................................................................................................................................................... */
 
-.button-red-1,
+/* .button-red-1,
 .button-red-2,
 .button-red-3,
 .button-red-4 {
@@ -160,7 +184,7 @@
   scale: -80%;
   border: calc(100vmin / 150) solid black;
   z-index: 1;
-}
+} */
 .button-g-1,
 .button-g-2,
 .button-g-3,
@@ -181,7 +205,7 @@
   border: calc(100vmin / 150) solid black;
   z-index: 1;
 }
-.button-y-1,
+/* .button-y-1,
 .button-y-2,
 .button-y-3,
 .button-y-4 {
@@ -190,18 +214,17 @@
   scale: -80%;
   border: calc(100vmin / 150) solid black;
   z-index: 1;
-}
-
+} */
+/* 
 .start-r {
   position: fixed;
-  background-color: #f80000;
-  z-index: 0;
+  background-color: #e9a4a4;
+  z-index: -1;
   width: calc(100vmin / 15);
   height: calc(100vmin / 15);
   top: calc((100vmin / 15) * 13);
   left: calc(var(--mar) + ((100vmin / 15) * 6));
-  /* left: calc(var(--mar) ); */
-  /* left: calc(((100vw-100vmin)/2)+ ((100vmin/15)*6)); */
+  
 }
 .start-b {
   position: fixed;
@@ -211,8 +234,7 @@
   height: calc(100vmin / 15);
   top: calc((100vmin / 15) * 8);
   left: calc(var(--mar) + ((100vmin / 15) * 13));
-  /* left: calc(var(--mar) ); */
-  /* left: calc(((100vw-100vmin)/2)+ ((100vmin/15)*6)); */
+ 
 }
 .start-g {
   position: fixed;
@@ -222,8 +244,7 @@
   height: calc(100vmin / 15);
   top: calc((100vmin / 15) * 6);
   left: calc(var(--mar) + ((100vmin / 15)));
-  /* left: calc(var(--mar) ); */
-  /* left: calc(((100vw-100vmin)/2)+ ((100vmin/15)*6)); */
+
 }
 .start-y {
   position: fixed;
@@ -232,11 +253,11 @@
   width: calc(100vmin / 15);
   height: calc(100vmin / 15);
   top: calc((100vmin / 15) * 1);
-  /* left: calc(var(--mar) + ((100vmin / 15) * 8 - 8px)); */
-  left: calc(var(--mar) + ((100vmin / 15) * 8));
-  /* left: calc(var(--mar) ); */
-  /* left: calc(((100vw-100vmin)/2)+ ((100vmin/15)*6)); */
-}
+  
+  left: calc(var(--mar) + ((100vmin / 15) * 8)); */
+/* left: calc(var(--mar) ); */
+/* left: calc(((100vw-100vmin)/2)+ ((100vmin/15)*6)); */
+/* } */
 
 /* .start-g{
   grid-column: -14/-15;
@@ -252,11 +273,16 @@
 
 .test {
   border: calc(100vmin / 300) solid black;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  border-collapse: collapse;
 }
 
 .r1 {
   grid-column: 7/8;
   grid-row: 14/15;
+  background-color: #e9a4a4;
 }
 
 .r2 {
@@ -674,3 +700,10 @@
   text-align: center;
   font-size: 30px;
 } */
+
+.button-red-1.button-red-2 {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
